@@ -3,12 +3,12 @@ Upstream-Name: sphinxcontrib-qthelp
 Source: https://github.com/sphinx-doc/sphinxcontrib-qthelp
 
 Files: *
-Copyright: 2007-2019 the Sphinx team
+Copyright: 2007-2024 the Sphinx team
 License: BSD-2-clause
 
 Files: debian/*
-Copyright: 2020 Sandro Tosi <morph@debian.org>,
- Dmitry Shachnev <mitya57@debian.org>
+Copyright: 2020-2022 Sandro Tosi <morph@debian.org>,
+           2022-2024 Dmitry Shachnev <mitya57@debian.org>
 License: BSD-2-clause
 Comment: entirely based on sphinxcontrib-serializinghtml packaging
 

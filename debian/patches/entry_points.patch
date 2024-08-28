@@ -1,9 +1,22 @@
---- a/setup.cfg
-+++ b/setup.cfg
-@@ -28,3 +28,6 @@ exclude = .git,.tox,.venv
- [mypy]
- ignore_missing_imports = True
+From: Sandro Tosi <morph@debian.org>
+Date: Sat, 28 Mar 2020 22:31:21 -0400
+Subject: Expose the builder using an entry point
+
+---
+ pyproject.toml | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index 032089a..c8222c6 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -60,6 +60,9 @@ standalone = [
+ name = "Georg Brandl"
+ email = "georg@python.org"
  
-+[options.entry_points]
-+sphinx.builders =
-+    qthelp = sphinxcontrib.qthelp
++[project.entry-points."sphinx.builders"]
++qthelp = "sphinxcontrib.qthelp"
++
+ [tool.flit.module]
+ name = "sphinxcontrib.qthelp"
+ 
